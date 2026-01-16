@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env 
+    environment:
+      - WEATHERAPI_KEY=5df680ab2a404916b8895424251209

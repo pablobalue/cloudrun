@@ -1,0 +1,12 @@
+@baseUrl = http://localhost:8080
+
+GET {{baseUrl}}/?cep=11111111
+###
+
+GET {{baseUrl}}/?cep=20561098
+###
+
+GET https://viacep.com.br/ws/11111111/json/
+###
+
+GET https://viacep.com.br/ws/20563000/json/
