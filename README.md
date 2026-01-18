@@ -32,16 +32,10 @@ Você precisa de uma chave da WeatherAPI:
 - `WEATHERAPI_KEY` (obrigatória)
 
 ### Recomendações (pra não vazar segredo no Git)
-Crie um arquivo `.env` local (não comite):
+Crie um arquivo `.env` local :
 
 ```env
 WEATHERAPI_KEY=coloque_sua_chave_aqui
-```
-
-E adicione ao `.gitignore`:
-```
-.env
-.env.*
 ```
 
 ---
@@ -67,6 +61,12 @@ go test ./...
 ```
 
 ---
+
+## ☁️ Serviço em Produção (Google Cloud Run)
+
+A aplicação está publicada e acessível publicamente em:
+
+https://fullcycle-desafio-738354502644.us-central1.run.app/
 
 ## 📡 API
 
@@ -120,7 +120,7 @@ Ao final, o Cloud Run vai te retornar a URL pública do serviço.
 
 ### Teste no Cloud Run
 ```bash
-curl "https://SUA_URL.run.app/?cep=20040001"
+curl "https://fullcycle-desafio-738354502644.us-central1.run.app/?cep=20040001"
 ```
 
 ---
